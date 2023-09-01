@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="description"
+    content="DiffuGen: Adaptable Approach for Generating Labeled Image Datasets using Stable Diffusion Models">
+  <meta name="keywords" content="3D Moments, view synthesis">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>DiffuGen: Adaptable Approach for Generating Labeled Image Datasets using Stable Diffusion Models</title>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+
+    gtag('js', new Date());
+
+    gtag('config', 'G-PYVRSFMDRL');
+  </script>
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+</head>
+
+<body>
+
+  <section class="hero is-light is-small">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <h1 class="title is-1 publication-title">DiffuGen: Adaptable Approach for Generating Labeled Image Datasets
+              using Stable Diffusion Models</h1>
+            <div class="is-size-5 publication-authors">
+              <span class="author-block">
+                <a href="https://mshenoda.com">Michael Shenoda</a>,</span>
+              <span class="author-block">
+                <a href="http://edwardkim.net/">Edward Kim</a></span>
+            </div>
+
+            <div class="is-size-5 publication-authors">
+              <span class="author-block">Department of Computer Science &nbsp; </span><br>
+              <h1 style="font-size:24px;font-weight:bold">Drexel University</h1>
+            </div>
+
+
+
+            <div class="column has-text-centered">
+              <div class="publication-links">
+                <!-- PDF Link. -->
+                <!-- <span class="link-block">
+                <a href="static/pdfs/3d_moments.pdf"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                  </span>
+                  <span>Paper</span>
+                </a>
+              </span> !-->
+                <span class="link-block">
+                  <a href="https://arxiv.org/abs/" class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="ai ai-arxiv"></i>
+                    </span>
+                    <span>arXiv</span>
+                  </a>
+                </span>
+                <!-- Video Link. -->
+                <!-- <span class="link-block">
+                <a href="#overview_video"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-youtube"></i>
+                  </span>
+                  <span>Video</span>
+                </a>
+              </span> -->
+                <!-- Code Link. -->
+                <span class="link-block">
+                  <a href="https://github.com/mshenoda/diffugen"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fab fa-github"></i>
+                    </span>
+                    <span>Code</span>
+                  </a>
+                </span>
+                <!-- Dataset Link. -->
+                <!-- <span class="link-block">
+                <a href=""
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="far fa-images"></i>
+                  </span>
+                  <span>Data</span>
+                  </a>
+              </span> -->
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container is-max-desktop">
+      <img src="static/images/data_overview.jpg" align="center" style="margin-top:0px;" style="margin-bottom:200px;">
+      <!-- Abstract. -->
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths"><br>
+          <h2 class="title is-3">Abstract</h2>
+          <div class="content has-text-justified">
+            <p>
+              Generating high-quality labeled image datasets is crucial for training accurate and robust machine
+              learning models in the field of computer vision. However, the process of manually labeling real images is
+              often time-consuming and costly. To address these challenges associated with dataset generation, we
+              introduce "DiffuGen," a simple and adaptable approach that harnesses the power of stable diffusion models
+              to create labeled image datasets efficiently. By leveraging stable diffusion models, our approach not only
+              ensures the quality of generated datasets but also provides a versatile solution for label generation. In
+              this paper, we present the methodology behind DiffuGen, which combines the capabilities of diffusion
+              models with two distinct labeling techniques: unsupervised and supervised. Distinctively, DiffuGen employs
+              prompt templating for adaptable image generation and textual inversion to enhance diffusion model
+              capabilities.
+            </p>
+          </div>
+        </div>
+      </div>
+      <!--/ Abstract. -->
+      <h2 align="center" class="title is-3">Framework</h2>
+      <img src="static/images/diffugen_overview.png" align="center" style="margin-top:0px;"
+        style="margin-bottom:120px;">
+      <hr>
+
+      <section class="section" id="BibTeX">
+        <div class="container is-max-desktop content">
+          <h2 class="title">BibTeX</h2>
+          <pre><code>
+@inproceedings{diffugen,
+  title     = {DiffuGen: Adaptable Approach for Generating Labeled Image Datasets using Stable Diffusion Models},
+  author    = {Shenoda, Michael and Kim, Edward}
+  year      = {2023}
+}</code></pre>
+        </div>
+      </section>
+
+
+
+      <footer>
+        <div align="center" class="container">
+          <div class="columns is-centered">
+            <div class="content">
+              template by <a href="https://github.com/nerfies/nerfies.github.io">nerfies</a>.
+            </div>
+          </div>
+        </div>
+      </footer>
+
+
+</body>
+
+</html>
