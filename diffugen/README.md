@@ -2,7 +2,7 @@
 
 This is the repository that contains source code for the [DiffuGen website](https://mshenoda.github.io/diffugen).
 
-If you find DiffuGen useful for your work please cite:
+If you find DiffuGen useful for your research please cite:
 ```
 @inproceedings{diffugen,
   title     = {DiffuGen: Adaptable Approach for Generating Labeled Image Datasets using Stable Diffusion Models},
